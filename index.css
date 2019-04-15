@@ -27,10 +27,33 @@ h3 {
     text-transform: uppercase;
 }
 
+.container {
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        text-align: center;
+    }
+}
+
 .section {
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 30px;
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 1000px) {
+    .section {
+        flex-basis: 0;
+    }
 }
 
 .section ul {
@@ -70,10 +93,28 @@ h3 {
     font-size: 15px;
 }
 
-#academia {
+.sectionStyle1 {
     background-color: #1565C0;
 }
 
-#work {
+.sectionStyle2 {
     background-color: #42A5F5;
+}
+
+.sectionStyle3 {
+    background-color: #607D8B;
+}
+
+.sectionStyle3 .date {
+    color: black;
+    background-color: white;
+}
+
+.sectionStyle4 {
+    background-color: #263238;
+}
+
+.sectionStyle4 .date {
+    color: black;
+    background-color: white;
 }
