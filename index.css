@@ -14,15 +14,50 @@ body {
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
+    text-transform: uppercase;
 }
 
-body > div {
+h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.section {
     padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.section ul {
+    padding-left: 40px;
+}
+
+.section li {
+    padding: 5px;
+}
+
+.inlineTitle {
+    display: inline;
+}
+
+.location {
+    font-size: 13px;
+}
+
+.date {
+    background-color: #607D8B;
+    border-radius: 4px;
+    padding: 4px;
+    display: inline-block;
 }
 
 #header {
     background-color: #263238;
-    padding-top: 40px;
 }
 
 #header h2 {
